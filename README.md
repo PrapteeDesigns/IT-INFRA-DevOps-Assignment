@@ -100,3 +100,29 @@ Cron entry:
 `*/15 * * * * /opt/scripts/infra_health_check.sh`
 
 The script was manually tested and showed CPU, RAM, disk, Docker, and backend container status successfully.
+
+
+
+## Task 4: Monitoring
+
+Prometheus and Node Exporter were configured using Docker Compose.
+
+### Prometheus
+
+Prometheus runs on port `9090`.
+
+It can be accessed through:
+
+`http://localhost:9090`
+
+### Node Exporter
+
+Node Exporter collects system metrics and runs on port `9100`.
+
+### Monitoring Services
+
+Check the monitoring containers using:
+
+sudo docker-compose ps
+
+Both Prometheus and Node Exporter were verified to be running successfully.
