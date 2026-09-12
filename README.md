@@ -72,3 +72,31 @@ showing the `backend`, `nginx`, and `postgres` containers running.
 Screenshot of the application opened through:
 
 http://localhost/
+
+## Task 3: Automation & Shell Scripting
+
+A Bash script was created at:
+
+`/opt/scripts/infra_health_check.sh`
+
+The script checks:
+
+- CPU usage
+- RAM usage
+- Root disk usage
+- Docker status
+- Backend container status
+
+Warnings are printed when the disk usage is above 85% or the backend container is stopped.
+
+Warnings are also logged in:
+
+`/var/log/infra_health.log`
+
+The script is scheduled to run every 15 minutes using cron.
+
+Cron entry:
+
+`*/15 * * * * /opt/scripts/infra_health_check.sh`
+
+The script was manually tested and showed CPU, RAM, disk, Docker, and backend container status successfully.
