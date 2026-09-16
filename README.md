@@ -161,27 +161,4 @@ The backup can be restored using:
 
 gunzip -c /var/backups/db/db_backup_YYYYMMDD.sql.gz | sudo docker exec -i postgres psql -U appuser -d appdb
 
-##Task 5: Git and Documentation
 
-Git was used to track the project configuration and scripts.
-
-Branches used:
-
-feature/docker-setup
-feature/scripts
-main
-
-The changes were committed with descriptive commit messages and merged into the main branch.
-
-The repository contains the Docker configuration, Nginx configuration, Flask application, monitoring configuration, backup scripts, health check script, and documentation.
-
-Screenshots
-
-The following screenshots were captured as evidence:
-
-UFW status
-Docker containers running
-Application through Nginx
-Infrastructure health check
-Health check warning log
-Prometheus running
