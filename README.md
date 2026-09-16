@@ -1,4 +1,4 @@
-#Task 1: System Provisioning and Linux Administration
+**#Task 1: System Provisioning and Linux Administration**
 
 ##What I did:
 
@@ -14,7 +14,7 @@
 - verified root SSH login is rejected
 
 
-#Task 2: Containerization & Web Services
+**#Task 2: Containerization & Web Services**
 
 ## Docker Setup
 
